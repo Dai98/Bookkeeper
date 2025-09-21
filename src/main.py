@@ -8,7 +8,7 @@ if __name__ == "__main__":
     if not re.match("^[0-9]{2}/[0-9]{4}$", date):
         raise ValueError(f"Invalid date input string: {date}")
     
-    workbook = WorkbookGenerator.generate()
+    workbook = WorkbookGenerator.generate(date)
     workbook = WorkbookProcessor.process(workbook, date)
     for row in workbook:
         print(row)
