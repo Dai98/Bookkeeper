@@ -175,6 +175,7 @@ cython_debug/
 
 # statements
 /statements/*.pdf
+/statements/*
 
 # output
 /output/*.xlsx
